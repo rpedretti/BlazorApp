@@ -8,7 +8,8 @@ app {
   flex-direction: column; }
 
 app > .spinner-wrapper {
-  width: 100%; }
+  width: 100%;
+  height: 80px; }
 
 .top-row {
   height: 3.5rem;
@@ -95,6 +96,25 @@ app > .spinner-wrapper {
     /* Never collapse the sidebar for wide screens */
     display: block; } }
 
+.bing-maps-page > .bing-maps-controls {
+  display: inline-block;
+  float: left; }
+  .bing-maps-page > .bing-maps-controls > .directions-container {
+    display: inline-block;
+    margin-right: 12px;
+    float: left; }
+    .bing-maps-page > .bing-maps-controls > .directions-container > .itineraryPanel {
+      height: 400px;
+      overflow: auto; }
+
+.bing-maps-page > .bing-maps {
+  margin-top: 12px;
+  float: left;
+  width: 100%;
+  height: 400px;
+  max-width: 400px;
+  position: relative; }
+
 .toggle-switch {
   margin-bottom: 14px; }
 
@@ -154,6 +174,30 @@ fieldset {
   fieldset .radio-group {
     margin-bottom: 16px; }
 
+.radio-group .radio-button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 50px;
+  min-width: 100px;
+  margin-bottom: 8px;
+  padding: 12px 8px;
+  background-color: gainsboro;
+  box-shadow: #A1A1A1 0px 0px 4px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, font-size .15s ease-in-out; }
+  .radio-group .radio-button.-disabled {
+    opacity: .65;
+    cursor: default; }
+  .radio-group .radio-button.-checked {
+    font-size: .96rem;
+    background-color: #CFCFCF;
+    box-shadow: #A1A1A1 0px 0px 0px; }
+  .radio-group .radio-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #9A9A9A; }
+    .radio-group .radio-button:focus.-checked {
+      box-shadow: #4C4C4C 0px 0px 0.2rem; }
+
 .paged-grid {
   height: calc(100vh - 140px);
   min-width: 360px; }
@@ -164,6 +208,16 @@ fieldset {
     grid-column-gap: 4px; }
     .paged-grid .movies > .movie-poster {
       justify-self: center; }
+
+.sensors-ambientlight {
+  margin-bottom: 24px; }
+
+.sensors-geolocation {
+  width: 100%; }
+  .sensors-geolocation-table {
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px; }
 
 .new-item--input {
   height: inherit; }

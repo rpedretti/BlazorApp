@@ -1,5 +1,4 @@
 ﻿using BlazorApp.Domain;
-using Microsoft.AspNetCore.Blazor;
 using Microsoft.JSInterop;
 using System.Net.Http;
 using System.Threading;
@@ -11,7 +10,7 @@ namespace BlazorApp.Services
     {
         #region Fields
 
-        private const string _baseUrl = "http://www.omdbapi.com/?apikey=" + key;
+        private const string _baseUrl = "https://www.omdbapi.com/?apikey=" + key;
 
         private const string key = "5cea5c6";
 
